@@ -45,7 +45,6 @@ const NavigationBar = () => {
                         height="100"
                         className="d-inline-block align-top-left"
                     />
-                    EJBenitez
                 </Nav.Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"
                     style={{ background: 'grey' }}

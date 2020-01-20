@@ -14,7 +14,7 @@ const Home = () => {
     display:flex;
     background-size:100% 100%;
     width:100%;
-    height:25rem;
+    height:30rem;
     justify-content:center;
     .body-container{
         text-align:center;
@@ -27,7 +27,7 @@ const Home = () => {
         background:#000;
         border-radius: 50px;
         border:green;
-        font-family:"bangers"
+        text-align:center;
     }
     .p{
         font-size:20px;
