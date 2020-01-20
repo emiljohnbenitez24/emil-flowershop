@@ -4,7 +4,7 @@ const About = () => {
 
     return (
 
-        <h1>This is the about component</h1>
+        <h1>This website is created by Emil John Benitez </h1>
 
     );
 }

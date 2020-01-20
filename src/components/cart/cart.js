@@ -42,11 +42,11 @@ const Shop = () => {
 
 
         <div style={{ color: 'black', textAlign: 'center' }}>
-            {items.length === 0 ? <h1 style={{ fontFamily: 'bangers', fontSize: '50px' }}>Cart is Empty</h1> :
-                <div>
-                    <h1 style={{ background: ' #ff8c00', color: 'black', fontFamily: 'bangers', fontSize: '50px' }}>
-                        Shopping Cart
+            <h1 style={{ background: ' #ff8c00', color: 'black', fontFamily: 'bangers', fontSize: '50px' }}>
+                Shopping Cart
                         </h1>
+            {items.length === 0 ? <h1 style={{ fontFamily: 'bangers', fontSize: '50px', background: '#F5F5F5' }}>Cart is Empty</h1> :
+                <div>
                     <Div>
                         <Container>
                             <Row className="rowone">
