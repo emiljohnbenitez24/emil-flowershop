@@ -54,7 +54,7 @@ const shopDetails = () => {
                         <Link to="/shop">
                             <Button className="back">Back</Button>
                         </Link>
-                        <Button variant="warning" style={{ height: '6vh' }} className="cart-btn mx-3"
+                        <Button variant="warning" style={{ height: '6vh' }} className="cart-btn"
                             disabled={detailedPlants.inCart}
                             onClick={() => {
                                 dispatch(addData(detailedPlants.id));

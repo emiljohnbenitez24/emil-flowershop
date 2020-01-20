@@ -18,7 +18,6 @@ const Shop = () => {
     const dispatch = useDispatch();
 
     const Div = styled.div`
-
         background:#F5F5F5;
         .rowone .col{
             font-weight:bold;
@@ -49,30 +48,28 @@ const Shop = () => {
                 <div>
                     <Div>
                         <Container>
-                            <Row className="rowone">
-                                <Col>Items</Col>
-                                <Col>Price</Col>
-                                <Col>Quantity</Col>
-                                <Col>Total</Col>
-                                <Col></Col>
+                            <Row className="rowone" >
+                                <Col >Items</Col>
+                                <Col >Price</Col>
+                                <Col >Quantity</Col>
+                                <Col >Total</Col>
+                                <Col  ></Col>
                             </Row>
                         </Container>
                         {items.map(item => {
                             return (
 
                                 <Container key={item.id}>
-                                    <Row className="rowtwo">
-                                        <Col><Image src={item.img} width={70} height={70} /></Col>
-                                        <Col><p>₱{item.price}</p></Col>
+                                    <Row className="rowtwo" >
+                                        <Col ><Image src={item.img} width={30} height={30} /></Col>
+                                        <Col ><p>₱{item.price}</p></Col>
                                         <Col >
-
-                                            <p>
-                                                <IoMdAdd
-                                                    onClick={() => { dispatch(addData(item.id)); setState(item.quantity) }}
-                                                />{item.quantity}
-                                                <TiMinus
-                                                    onClick={() => { dispatch(subData(item.id)); setState(item.quantity) }}
-                                                /></p>
+                                            <IoMdAdd
+                                                onClick={() => { dispatch(addData(item.id)); setState(item.quantity) }}
+                                            />{item.quantity}
+                                            <TiMinus style={{ position: 'fixed', marginTop: '5px' }}
+                                                onClick={() => { dispatch(subData(item.id)); setState(item.quantity) }}
+                                            />
                                         </Col>
                                         <Col><p>₱{item.total} </p></Col>
                                         <Col><FaWindowClose className="remove-item" onClick={() => dispatch(removeData(item.id))} /></Col>
@@ -83,12 +80,12 @@ const Shop = () => {
                         })}
                         <hr style={{ color: '5px solid black' }}></hr>
                         <Container>
-                            <Row className="rowthree">
-                                <Col></Col>
-                                <Col></Col>
+                            <Row className="rowthree" className="justify-content-md-center">
+                                <Col ></Col>
+                                <Col ></Col>
                                 <Col></Col>
                                 <Col><p>₱{total}</p></Col>
-                                <Col><Button>Checkout</Button></Col>
+                                <Col><Button style={{ fontSize: '17px' }}>Checkout</Button></Col>
                             </Row>
                         </Container>
                     </Div >
