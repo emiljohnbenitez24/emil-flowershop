@@ -14,6 +14,7 @@ const Home = () => {
     display:flex;
     background-size:100% 100%;
     width:100%;
+    height:25rem;
     justify-content:center;
     .body-container{
         text-align:center;
@@ -25,7 +26,6 @@ const Home = () => {
     .jumbotron{
         background:#000;
         border-radius: 50px;
-        margin:20vh;
         border:green;
         font-family:"bangers"
     }

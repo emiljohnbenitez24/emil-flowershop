@@ -10,6 +10,7 @@ import './nav.css';
 
 
 const Styles = styled.div`
+
     .navbar-brand, .navbar-nav .nav-link {
         color: black;
         font-family: 'Bangers';
@@ -20,6 +21,10 @@ const Styles = styled.div`
     &:focus{
         color:#ff8c00;
         outline:none;
+    }
+    .cart-count{
+        float:right;
+        font-size:15px;
     }
     }
     `
@@ -32,13 +37,15 @@ const NavigationBar = () => {
     return (
         <Styles>
             <Navbar bg="light" variant="dark" >
-                <Navbar.Brand> <Nav.Link as={Link} to="/" tabIndex="1">
+                <Navbar.Brand> <Nav.Link as={Link} to="/" tabIndex="1"
+                    style={{ fontSize: '40px', color: '#00008b' }}>
                     <img
                         src={logo}
                         width="100"
                         height="100"
                         className="d-inline-block align-top-left"
                     />
+                    EJBenitez
                 </Nav.Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"
                     style={{ background: 'grey' }}
@@ -46,10 +53,9 @@ const NavigationBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav"  >
                     <Nav className="mr-auto">
                     </Nav>
-                    <Nav >
-                        <Nav.Link as={Link} to="/about" >About</Nav.Link>
+                    <Nav className="nav-group">
                         <Nav.Link as={Link} to="/shop"  >Shop</Nav.Link>
-                        <Nav.Link as={Link} to="/cart"  ><TiShoppingCart />cart:{cart.length}</Nav.Link>
+                        <Nav.Link as={Link} to="/cart"  ><TiShoppingCart /><p className="cart-count">{cart.length}</p></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar >
