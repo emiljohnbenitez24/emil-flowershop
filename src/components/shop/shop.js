@@ -2,10 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import ShopItems from './shopItems'
-import img from '../../assets/background-flower.jpg'
 import { Col, Row } from 'react-bootstrap'
 import Footer from '../footer/footer'
-import Carousel from '.././carousel'
+import Carousel from '../carousel'
 
 const MainContainer = styled.div`
 text-align: center;
@@ -14,9 +13,6 @@ text-align: center;
     margin:0 auto;
     background:grey;
     height:50vh;
-}
-.column-two{
-    background-image: url(${img});
 }
 h1{
     color:#ff8c00;
