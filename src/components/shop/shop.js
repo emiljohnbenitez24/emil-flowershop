@@ -77,7 +77,6 @@ const Shop = () => {
                                 <ShopItems key={item.id} item={item} />
                             )
                         }
-
                     </Col>
                 </Row>
             </Container>

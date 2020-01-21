@@ -20,12 +20,12 @@ const Home = () => {
         color:white;
         background:#000;
         width:100%;
-        opacity:.6;
+        opacity:.8;
     }
     .jumbotron{
+        margin-top:100px;
         background:#000;
         border-radius: 50px;
-        border:green;
         text-align:center;
     }
     button{

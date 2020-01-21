@@ -49,11 +49,12 @@ const NavigationBar = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link href="#shop" as={NavLink} to="/shop"  >Shop</Nav.Link>
-                        <Nav.Link href="#cart" as={NavLink} to="/cart" ><TiShoppingCart /><p className="cart-count">{cart.length}</p></Nav.Link>
+                        <Nav.Link href="#cart" as={NavLink} to="/cart" ><p className="cart-count"
+                        ><TiShoppingCart /><p style={{ display: 'inline-block' }}>{cart.length}</p></p></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar >
-        </Styles>
+        </Styles >
     )
 }
 
