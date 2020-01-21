@@ -12,8 +12,7 @@ const Home = () => {
     const MainContainer = styled.div`
     background-image:url(${img});
     display:flex;
-    background-size:100% 100%;
-    width:100%;
+    background-size:100% 100%;  
     height:30rem;
     justify-content:center;
     .body-container{
@@ -28,6 +27,11 @@ const Home = () => {
         border-radius: 50px;
         border:green;
         text-align:center;
+    }
+    button{
+        color:white;
+        background:#ff8c00
+        border:none;
     }
     .p{
         font-size:20px;

@@ -67,7 +67,7 @@ const Shop = () => {
                                             <IoMdAdd
                                                 onClick={() => { dispatch(addData(item.id)); setState(item.quantity) }}
                                             />{item.quantity}
-                                            <TiMinus style={{ position: 'fixed', marginTop: '5px' }}
+                                            <TiMinus
                                                 onClick={() => { dispatch(subData(item.id)); setState(item.quantity) }}
                                             />
                                         </Col>

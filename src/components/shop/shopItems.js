@@ -16,7 +16,7 @@ const AnotherDiv = styled.div`
   margin:10px;
 .card{
     font-family: 'Bangers';
-    font-size:3vh;
+    font-size:2vh;
     overflow:hidden;
 }
 .card-img{
@@ -36,7 +36,7 @@ const AnotherDiv = styled.div`
     transform:scale(1.0);
 }
 .card:hover .card-img{
-    transform:scale(1.3);
+    transform:scale(2);
 }
 `
 
@@ -51,7 +51,7 @@ const ShopItems = (props) => {
 
     return (
         <AnotherDiv>
-            <Card className="mx-auto" style={{ width: '15rem', border: 'none' }}  >
+            <Card className="mx-auto" style={{ width: '10rem', border: 'none' }}  >
                 <Card.Header style={{ color: "black" }}>
                     <Col>
                         <p className="plantName">{name}</p>
