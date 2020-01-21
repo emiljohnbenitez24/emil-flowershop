@@ -48,11 +48,6 @@ const Shop = () => {
             <Container>
                 <Row>
                     <Col sm={4} className="sidebar">
-                        <Form inline className="justify-content-center"
-                            style={{ marginTop: '10px' }}
-                        >
-                            <FormControl onChange={(e) => setState(e.target.value)} type="text" placeholder="Search" className="mr-sm-2" />
-                        </Form>
                         <h1 className="featured">Owner</h1>
                         <Card className="mx-auto" style={{ width: '12rem', border: 'none' }}  >
                             <Card.Header style={{ color: "black" }}>
@@ -68,6 +63,11 @@ const Shop = () => {
                             </Card.Text>
 
                         </Card>
+                        <Form inline className="justify-content-center"
+                            style={{ marginBottom: '10px', marginTop: '10px' }}
+                        >
+                            <FormControl onChange={(e) => setState(e.target.value)} type="text" placeholder="Search a Flower" className="mr-sm-2" />
+                        </Form>
                     </Col>
                     <Col sm={8} >
                         {items
