@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import ShopItems from './shopItems'
-import { Col, Row, Container, Form, FormControl, Button, Card } from 'react-bootstrap'
-import img from '../../assets/creator.jpg'
-import Footer from '../footer/footer'
-import Carousel from '../carousel'
+import { Col, Row, Container } from 'react-bootstrap';
+import Carousel from '../carousel';
 
 const MainContainer = styled.div`
 text-align: center;
@@ -47,29 +45,7 @@ const Shop = () => {
             </div>
             <Container>
                 <Row>
-                    <Col sm={4} className="sidebar">
-                        <h1 className="featured">Owner</h1>
-                        <Card className="mx-auto" style={{ width: '12rem', border: 'none' }}  >
-                            <Card.Header style={{ color: "black" }}>
-                                <h5>Emil John E. Benitez</h5>
-                            </Card.Header>
-                            <Card.Img className="card-img" src={img} style={{ height: '10rem' }} />
-                            <Card.Body>
-                                <p>        BSIT </p>
-                                <p>        Pccian </p>
-                                <p>        ReactJS Developer </p>
-                            </Card.Body>
-                            <Card.Text style={{ color: "black" }} >
-                            </Card.Text>
-
-                        </Card>
-                        <Form inline className="justify-content-center"
-                            style={{ marginBottom: '10px', marginTop: '10px' }}
-                        >
-                            <FormControl onChange={(e) => setState(e.target.value)} type="text" placeholder="Search a Flower" className="mr-sm-2" />
-                        </Form>
-                    </Col>
-                    <Col sm={8} >
+                    <Col>
                         {items
                             .filter(item =>
                                 item.name.toLowerCase().indexOf(state.toLowerCase()) >= 0)

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Nav, Navbar, NavItem, Jumbotron } from 'react-bootstrap';
+import React from 'react';
+import { Nav, Navbar } from 'react-bootstrap';
 import { useSelector } from 'react-redux'
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'
@@ -30,14 +30,15 @@ const NavigationBar = () => {
     const cart = useSelector(state => state.cart.cart)
     return (
         <Styles>
-            <Navbar collapseOnSelect bg="light" expand="lg" variant="dark" >
+            <Navbar collapseOnSelect bg="light" expand="lg" variant="dark" style={{ position: 'relative' }}>
                 <Navbar.Brand className="navbar-brand">
                     <Nav.Link href="#home" as={NavLink} to="/"
                     >
                         <img
                             src={logo}
-                            width="100"
-                            height="100"
+                            width="50"
+                            height="50"
+                            alt=""
                             className="d-inline-block align-top-left"
                         />
                     </Nav.Link></Navbar.Brand>

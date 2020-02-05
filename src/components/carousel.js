@@ -16,10 +16,6 @@ const CarouselComp = () => {
                     src={flower1}
                     alt="First slide"
                 />
-                <Carousel.Caption>
-                    <h3></h3>
-                    <p></p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img height={500}
@@ -27,10 +23,6 @@ const CarouselComp = () => {
                     src={flower2}
                     alt="Third slide"
                 />
-                <Carousel.Caption>
-                    <h3></h3>
-                    <p></p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img height={500}
@@ -38,11 +30,6 @@ const CarouselComp = () => {
                     src={flower3}
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h3></h3>
-                    <p></p>
-                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     )

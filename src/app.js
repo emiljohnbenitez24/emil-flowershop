@@ -6,7 +6,6 @@ import Shop from './components/shop/shop';
 import Details from './components/shop/shopDetails'
 import Cart from './components/cart/cart'
 import Nav from './components/nav'
-import styled from 'styled-components';
 
 
 const App = () => {

@@ -10,23 +10,28 @@ import img from '../../assets/flowershop.jpg'
 const Home = () => {
 
     const MainContainer = styled.div`
-    background-image:url(${img});
+    background:#000 url(${img});
     display:flex;
     background-size:100% 100%;  
     height:30rem;
-    justify-content:center;
+    position:relative;
     .body-container{
         text-align:center;
-        color:white;
         background:#000;
-        width:100%;
+        min-width:100%;
+        min-height:100%
         opacity:.8;
+        position:absolute;
     }
-    .jumbotron{
-        margin-top:100px;
-        background:#000;
-        border-radius: 50px;
+    .container{
+        z-index:1;
+        justify-content:center;
         text-align:center;
+        align-items:center;
+    }
+    .Jumbotron{
+        margin-top:30vh;
+        color:white;
     }
     button{
         color:white;
@@ -46,10 +51,10 @@ const Home = () => {
     return (
 
         <MainContainer>
-            <div class="body-container">
+            <Container>
                 <Row>
                     <Col >
-                        <Jumbotron >
+                        <div className="Jumbotron">
                             <h1 className="h1">Welcome to Emil's Flower shop</h1>
                             <p className="p">
                                 Nice & Beautiful
@@ -59,10 +64,11 @@ const Home = () => {
                                     <Button variant="success">View Items</Button>
                                 </Link>
                             </p>
-                        </Jumbotron>
+                        </div>
                     </Col>
                 </Row>
-            </div>
+            </Container>
+            <div class="body-container"></div>
         </MainContainer>
 
 

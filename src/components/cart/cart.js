@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { Button, Table, Image, Col, Row, Container } from 'react-bootstrap'
+import { Button, Image, Col, Row, Container } from 'react-bootstrap'
 import { addData, removeData, subData } from '../../redux/actions'
 import styled from 'styled-components'
 import { TiMinus } from 'react-icons/ti'
@@ -80,7 +80,7 @@ const Shop = () => {
                         })}
                         <hr style={{ color: '5px solid black' }}></hr>
                         <Container>
-                            <Row className="rowthree" className="justify-content-md-center">
+                            <Row className="rowthree justify-content-md-center">
                                 <Col ></Col>
                                 <Col ></Col>
                                 <Col></Col>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { addData } from '../../redux/actions'
 import { useDispatch } from 'react-redux'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Col, Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { viewData } from '../../redux/actions'
 import { FaShoppingCart } from "react-icons/fa";
@@ -44,7 +44,7 @@ const AnotherDiv = styled.div`
 
 const ShopItems = (props) => {
 
-    const { id, img, name, description, price, inCart } = props.item;
+    const { id, img, name, price, inCart } = props.item;
     const [state, setState] = useState(inCart);
     const [modalShow, setModalShow] = useState(false);
     const dispatch = useDispatch();
